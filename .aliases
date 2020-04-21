@@ -1,0 +1,39 @@
+# global 
+alias bye='sudo shutdown -h now'
+alias reload='sudo reboot -h now'
+alias get='sudo pacman -S'
+alias lvlup='sudo pacman -Sy'
+alias kick='sudo rm -rf'
+alias t="touch"
+# localhost
+alias darova='sudo /opt/lampp/xampp start'
+alias poka='sudo /opt/lampp/xampp stop'
+# 7z 
+arch () {
+
+	7z a "$1" ./*
+
+}
+alias unarch='7z e'
+# img 
+alias img='viewnior'
+# tmux
+ns () {
+
+	tmux new-session -s "$1" -d
+
+}
+alias cs='tmux attach -t'
+# python 
+createvenv () {
+
+    python3 -m venv "$1";source "$1"/bin/activate
+
+}
+# django 
+alias idjango='sudo pip3 install django'
+
+# gulp
+alias ultraGulp='cp ~/.gulpich/* . ; npm i'
+#project front
+alias cfp='mkdir app ;mkdir app/static; mkdir dist; mkdir app/static/sass; mkdir app/static/js; mkdir app/static/img; mkdir app/static/fonts; touch app/static/sass/style.sass; touch app/static/js/script.js'
